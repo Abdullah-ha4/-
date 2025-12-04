@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>لوحة التحكم</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <header class="header">
+      <h1 class="title">لوحة التحكم</h1>
+    </header>
+    <main class="content">
+      <div class="welcome-box">
+        <h2 id="dashWelcome">مرحباً بك 👋</h2>
+      </div>
+
+      <div class="stats-box">
+        <h3>📊 إحصائيات سريعة</h3>
+        <p>عدد الأدوية المتوفرة: <span id="medCount">0</span></p>
+        <p>إجمالي الكمية المتوفرة: <span id="medTotal">0</span></p>
+      </div>
+
+      <canvas id="medChart" width="400" height="200"></canvas>
+
+      <div class="dashboard-links">
+        <a href="index.html" class="btn">🏠 الرئيسية</a>
+        <a href="medicine.html" class="btn">💊 إدارة الأدوية</a>
+        <a href="signup.html" class="btn">👤 إدارة الحساب</a>
+        <button id="logoutDashBtn" class="btn">🚪 تسجيل الخروج</button>
+      </div>
+    </main>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

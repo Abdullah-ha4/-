@@ -1,0 +1,217 @@
+
+/* إعدادات عامة */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  background: linear-gradient(to bottom right, #e0f7fa, #80deea);
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+
+/* رأس الصفحة */
+.header {
+  
+  background: linear-gradient(135deg, #009688, #004d40);
+  color: white;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.header nav {
+  height: 70%;
+  margin-top: 15px;
+ 
+}
+
+.header nav a {
+  margin: 0 12px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 25px;
+  transition: 0.3s;
+  background: rgba(255,255,255,0.2);
+}
+
+.header nav a:hover {
+  background: rgba(255,255,255,0.4);
+  color: #fff;
+}
+
+#logoutBtn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  background: #e53935;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#logoutBtn:hover {
+  background: #b71c1c;
+}
+
+
+/* المحتوى الرئيسي */
+.content {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(255,255,255,0.95);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* النماذج */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, select, button {
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #009688;
+  box-shadow: 0 0 10px rgba(0,150,136,0.4);
+  outline: none;
+}
+
+button {
+  background: linear-gradient(135deg, #009688, #004d40);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #26a69a, #00695c);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* =================================== */
+/* الجداول */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+  background: #ffffffcc;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+th {
+  background: linear-gradient(135deg, #004d40, #009688);
+  color: white;
+  font-size: 16px;
+}
+
+tr:nth-child(even) {
+  background: rgba(0,0,0,0.05);
+}
+
+tr:hover {
+  background: rgba(0,150,136,0.1);
+}
+
+table .btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+table .btn:hover {
+  transform: translateY(-1px);
+}
+
+/* =================================== */
+/* مربعات الإحصائيات */
+.stats-box, .welcome-box {
+  background: linear-gradient(135deg, #80deea, #26a69a);
+  color: white;
+  padding: 25px;
+  border-radius: 20px;
+  margin: 25px auto;
+  width: 350px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  font-size: 18px;
+  text-align: center;
+}
+
+.stats-box h3, .welcome-box h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+/* =================================== */
+/* روابط لوحة التحكم */
+.dashboard-links {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.dashboard-links .btn {
+  width: 220px;
+  font-size: 18px;
+  padding: 12px 0;
+  background: linear-gradient(135deg, #009688, #004d40);
+  color: white;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.dashboard-links .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* =================================== */
+/* Canvas الرسم البياني */
+canvas {
+  margin: 30px auto;
+  display: block;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 90%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
